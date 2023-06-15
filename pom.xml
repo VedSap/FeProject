@@ -37,6 +37,11 @@
             <scope>runtime</scope>
             <version>8.0.33</version>
         </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20230227</version>
+        </dependency>
     </dependencies>
 
 </project>

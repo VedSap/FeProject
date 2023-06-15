@@ -18,11 +18,12 @@ public class DataEntity {
     private String firId;
     private String policeStationName;
     private String perpName;
+    private int severity;
 
     public DataEntity() {
     }
 
-    public DataEntity(long recordId, String crime, double latitude, double longitude, String date, String firId, String policeStationName, String perpName) {
+    public DataEntity(long recordId, String crime, double latitude, double longitude, String date, String firId, String policeStationName, String perpName, int severity) {
         this.recordId = recordId;
         this.crime = crime;
         this.latitude = latitude;
@@ -31,6 +32,7 @@ public class DataEntity {
         this.firId = firId;
         this.policeStationName = policeStationName;
         this.perpName = perpName;
+        this.severity = severity;
     }
 
     public long getRecordId() {
@@ -95,5 +97,13 @@ public class DataEntity {
 
     public void setPerpName(String perpName) {
         this.perpName = perpName;
+    }
+
+    public int getSeverity() {
+        return severity;
+    }
+
+    public void setSeverity(int severity) {
+        this.severity = severity;
     }
 }
